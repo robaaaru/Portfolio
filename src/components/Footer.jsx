@@ -1,5 +1,6 @@
+import { Button } from "@/components/retroui/Button";
 export default function Footer(){
     return(
-        <h1>hello</h1>
+     <Button>Click Me!</Button>
     )
 }
