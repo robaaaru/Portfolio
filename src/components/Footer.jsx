@@ -2,15 +2,16 @@
 import { Square, PanelsTopLeft, BriefcaseBusiness, PencilLine, Link } from 'lucide-react';
 
 export default function Footer(){
-    let iconSize = 24
+    let iconSize = 28
+    let strokeWidth = 1.8
 
     return(
-    <footer className=" flex justify-center items-center gap-8  fixed bottom-0 bg-[#f2ebbf] w-[100%] p-5 border-t-[0.17rem] ">
-       <Square color="#048688" size={iconSize}/>
-       <PanelsTopLeft  size={iconSize}/>
-       <BriefcaseBusiness size={iconSize}/>
-       <PencilLine size={iconSize}/>
-       <Link size={iconSize}/> 
+    <footer className=" flex justify-center items-center gap-8  fixed bottom-0 w-[100%] p-5 border-t-[0.15rem] ">
+       <Square strokeWidth={1.8} size={iconSize} className='hover:stroke-[#048688] hover:-translate-y-1 transition-transform duration-175 ease-in'/>
+       <PanelsTopLeft strokeWidth={strokeWidth} size={iconSize} className='hover:stroke-[#048688] hover:-translate-y-1 transition-transform duration-175 ease-in'/>
+       <BriefcaseBusiness strokeWidth={strokeWidth} size={iconSize} className='hover:stroke-[#048688] hover:-translate-y-1 transition-transform duration-175 ease-in'/>
+       <PencilLine strokeWidth={strokeWidth} size={iconSize} className='hover:stroke-[#048688] hover:-translate-y-1 transition-transform duration-175 ease-in'/>
+       <Link strokeWidth={strokeWidth} size={iconSize} className='hover:stroke-[#048688] hover:-translate-y-1 transition-transform duration-175 ease-in'/> 
     </footer>
     )
 }
