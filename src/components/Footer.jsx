@@ -4,8 +4,7 @@ import { Square, PanelsTopLeft, Briefcase, SquarePen, SquareArrowOutUpRight } fr
 export default function Footer({setPage}){
     
     let strokeWidth = 1.8
-    const baseClasses = 'hover:stroke-[#048688] lg:w-[1.8rem] lg:h-[1.8rem] w-[1.5rem] h-[1.5rem] hover:-translate-y-1 transition-transform duration-175 ease-in'
-
+    const baseClasses = 'stroke-gray-700 hover:stroke-[#048688] lg:w-[1.8rem] lg:h-[1.8rem] w-[1.5rem] h-[1.5rem] hover:-translate-y-1 transition-transform duration-175 ease-in'
     const handleIconClick = () =>setPage('Default Page')
 
     let icons = [
