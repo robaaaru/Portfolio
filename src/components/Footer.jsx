@@ -15,7 +15,7 @@ export default function Footer({setPage}){
         {icon: SquareArrowOutUpRight , key:'SquareArrowOutUpRight'},
     ]   
 
-    let iconsArr = ()=> icons.map(({icon: Icon, key}) => (
+    let iconsArr = () => icons.map(({icon: Icon, key}) => (
         <Icon
         key={key}
         onClick={handleIconClick} 
@@ -26,7 +26,7 @@ export default function Footer({setPage}){
 
     return(
     
-    <footer className="fixed bottom-0 w-[100%] p-5">
+    <footer className="fixed bottom-0 w-[100%] p-4 backdrop-blur-2xl">
         <div className="lg:pb-2 flex justify-center items-center gap-6">{iconsArr()}</div>
     </footer>
     )
