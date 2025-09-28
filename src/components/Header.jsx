@@ -4,7 +4,7 @@ export default function Header(){
 
     return(
         <header className="fixed top-0 w-full ">
-            <div className="mx-auto w-[45rem] p-5 border-gray-200 border-b-1 backdrop-blur-2xl">
+            <div className="mx-auto w-[45rem] p-4 max-h-18 border-gray-200 border-b-1 backdrop-blur-2xl overflow-hidden">
             <Breadcrumb>
                 <BreadcrumbList>
                     <BreadcrumbItem>
