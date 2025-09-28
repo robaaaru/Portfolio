@@ -5,7 +5,7 @@ export default function Footer({ setPage }) {
 
   const baseIconClasses =
     "stroke-gray-700 hover:stroke-[#048688] lg:w-[1.7rem] lg:h-[1.75rem] w-[1.5rem] h-[1.5rem] hover:-translate-y-1 transition-transform duration-175 ease-in cursor-pointer";
-  const wrapperClasses = "h-8";
+  const wrapperClasses = "h-10";
 
   const icons = [
     { icon: Square, key: "Square" },
@@ -16,7 +16,7 @@ export default function Footer({ setPage }) {
   ];
 
   return (
-    <footer className="fixed bottom-0 w-full p-4 max-h-15 overflow-hidden backdrop-blur-2xl">
+    <footer className="fixed bottom-0 w-full p-4 h-17 overflow-hidden backdrop-blur-2xl">
       <div className="flex justify-center items-center gap-6">
         {icons.map(({ icon: Icon, key }, index) => (
           <button
